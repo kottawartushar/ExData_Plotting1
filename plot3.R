@@ -10,7 +10,7 @@ lines(subsetDate_data$date_time, subsetDate_data$Sub_metering_2, type = "l",
       ylab = "Energy sub metering", col = "red")
 lines(subsetDate_data$date_time, subsetDate_data$Sub_metering_3, type = "l",
       ylab = "Energy sub metering", col = "blue")
-legend("topright", lty = 1,
+legend("topright", lty = 1, bty = "n",
        c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col = c("black", "red", "blue"))
 png("plot3.png", width = 480, height = 480)
