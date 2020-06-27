@@ -6,5 +6,5 @@ subsetDate_data$Date <- as.Date(subsetDate_data$Date, format = "%d/%m/%Y")
 subsetDate_data$date_time <- as.POSIXct(paste(subsetDate_data$Date, subsetDate_data$Time))
 plot(subsetDate_data$date_time, subsetDate_data$Global_active_power, type = "l", xlab = " ",
      ylab = "Global Active Power (kilowatts)")
-png("plot2.png", width = 480, height = 480)
+dev.copy(png, file = "plot2.png", width = 480, height = 480)
 dev.off()
